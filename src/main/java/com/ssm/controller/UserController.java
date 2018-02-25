@@ -29,7 +29,7 @@ public class UserController extends BaseController {
 	}
 
 	@RequestMapping(value = "query", method = RequestMethod.GET)
-//	@ResponseBody
+	@ResponseBody
 	public String query(Model model) {
 		User user = userService.getUser("1");
 		model.addAttribute("user", user);

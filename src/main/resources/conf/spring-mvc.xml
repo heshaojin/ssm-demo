@@ -31,7 +31,7 @@
 	<bean id="freemarkerConfig"
 		class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
 		<property name="templateLoaderPath">
-			<value>/view/</value>
+			<value>/resources/view/</value>
 		</property>
 	</bean>
 	<bean id="htmlViewResolver"
