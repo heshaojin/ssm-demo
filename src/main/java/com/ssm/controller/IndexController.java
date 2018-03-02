@@ -5,15 +5,14 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class IndexController extends BaseController {
+public class IndexController {
 	
 	private Logger LOG = LoggerFactory.getLogger(getClass());
 	
-	@RequestMapping(value = "/index", method = RequestMethod.GET)
+	@RequestMapping(value = "/index")
 	public ModelAndView index(Model model) {
 		ModelAndView mav = new ModelAndView();  
 		mav.addObject("hello", "spring");  

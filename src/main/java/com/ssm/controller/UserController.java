@@ -2,9 +2,9 @@ package com.ssm.controller;
 
 import javax.annotation.Resource;
 
+
 import org.apache.log4j.Logger;
 
-import com.ssm.controller.BaseController;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,7 +17,7 @@ import com.ssm.service.UserService;
 
 @Controller
 @RequestMapping("/user")
-public class UserController extends BaseController {
+public class UserController {
 	private static final Logger LOG = Logger.getLogger(UserController.class);
 //	@Resource
 	private UserService userService;
